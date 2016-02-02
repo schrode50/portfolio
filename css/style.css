@@ -1,0 +1,8 @@
+@import URL('https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css');
+@import URL('skeleton.css');
+
+h1 {
+  text-align: center;
+  margin-top: 3%;
+  font-family: lobster;
+}
