@@ -1,3 +1,3 @@
 This project is intended to be developed as an online presence for me that will hopefully evolve into a good professional representation of my work.
 
-This is a work in progress
+This is a work in progress.
