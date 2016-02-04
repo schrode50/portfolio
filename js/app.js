@@ -76,10 +76,12 @@ populate();
 // Work.handleNav();
 
 Work.handleNav = function() {
-  $('.tab').on('click', function() {
+  $('.main-nav').on('click', function() {
     $('#full_list').hide();
-    var huh = $('#' + $(this).data('content')).fadeIn();
-    console.log(huh);
+    // $('#' + $(this).data('content')).fadeIn();
+    $('#' +)
+    // console.log(huh);
   });
+  // $('.main-nav .tab:first').click();
 };
 Work.handleNav();
