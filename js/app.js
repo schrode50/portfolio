@@ -76,12 +76,22 @@ populate();
 // Work.handleNav();
 
 Work.handleNav = function() {
-  $('.main-nav').on('click', function() {
-    $('#full_list').hide();
+  $('.main-nav').on('click', '.tab', function(e) {
+    $('#portfolio').hide();
+  var myID =  $('#' + $(this).data('content')).fadeIn();
+    // var ok=$(event.target).text().toLowerCase();
+    // var myID = $('#' + ok);
+    // $('#full_list').not(myID).hide();
+    // var close=$('#' + ok).fadeIn();
+
     // $('#' + $(this).data('content')).fadeIn();
-    $('#' +)
-    // console.log(huh);
+    // $('#' + '.tab[data-content="' + $(this).val() + '"]').fadeIn();
+    // console.log(event.target);
+    console.log($('#' + $(this).data('content')).fadeIn());
+    console.log(myID);
+    // console.log(close);
+
   });
-  // $('.main-nav .tab:first').click();
+
 };
 Work.handleNav();
