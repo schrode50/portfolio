@@ -52,46 +52,14 @@ function populate(){
 };
 populate();
 
-// $('.tab').on('click', function(event) {
-//   var $name = ($(event.target).data('name'));
-//   if($(event.target).hasClass('tab')) {
-//     $('.tab-content').hide();
-//     $('section[data]').fadeIn('fast');
-//     console.log(this);
-//     console.log($('#' + $name).fadeIn('fast'));
-//   }
-// });
-
-// Work.handleNav = function() {
-//   $('.tab').on('click', function(event) {
-//     var $tabContent = $('.tab');
-//     var $dataContent = $(this).attr('data-content');
-//     $('#full_list').hide();
-//     $('.tab[data-name = "'"#" + $(this).val()]).fadeIn();
-//     // $tabContent.filter('#' + $dataContent).show();
-//     $('this').show('#' + $dataContent);
-//     console.log(this);
-//   });
-// };
-// Work.handleNav();
+$('.home').on('click', function() {
+  location.reload();
+});
 
 Work.handleNav = function() {
   $('.main-nav').on('click', '.tab', function(e) {
     $('#portfolio').hide();
-  var myID =  $('#' + $(this).data('content')).fadeIn();
-    // var ok=$(event.target).text().toLowerCase();
-    // var myID = $('#' + ok);
-    // $('#full_list').not(myID).hide();
-    // var close=$('#' + ok).fadeIn();
-
-    // $('#' + $(this).data('content')).fadeIn();
-    // $('#' + '.tab[data-content="' + $(this).val() + '"]').fadeIn();
-    // console.log(event.target);
-    console.log($('#' + $(this).data('content')).fadeIn());
-    console.log(myID);
-    // console.log(close);
-
+    $('#' + $(this).data('content')).fadeIn();
   });
-
 };
 Work.handleNav();
