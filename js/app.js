@@ -52,34 +52,14 @@ function populate(){
 };
 populate();
 
-// $('.tab').on('click', function(event) {
-//   var $name = ($(event.target).data('name'));
-//   if($(event.target).hasClass('tab')) {
-//     $('.tab-content').hide();
-//     $('section[data]').fadeIn('fast');
-//     console.log(this);
-//     console.log($('#' + $name).fadeIn('fast'));
-//   }
-// });
-
-// Work.handleNav = function() {
-//   $('.tab').on('click', function(event) {
-//     var $tabContent = $('.tab');
-//     var $dataContent = $(this).attr('data-content');
-//     $('#full_list').hide();
-//     $('.tab[data-name = "'"#" + $(this).val()]).fadeIn();
-//     // $tabContent.filter('#' + $dataContent).show();
-//     $('this').show('#' + $dataContent);
-//     console.log(this);
-//   });
-// };
-// Work.handleNav();
+$('.home').on('click', function() {
+  location.reload();
+});
 
 Work.handleNav = function() {
-  $('.tab').on('click', function() {
-    $('#full_list').hide();
-    var huh = $('#' + $(this).data('content')).fadeIn();
-    console.log(huh);
+  $('.main-nav').on('click', '.tab', function(e) {
+    $('#portfolio').hide();
+    $('#' + $(this).data('content')).fadeIn();
   });
 };
 Work.handleNav();
