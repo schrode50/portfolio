@@ -1,22 +1,5 @@
 var allJobs = [];
 
-var rawData = [
-  {
-    name:   'Cookie Stand',
-    // date:   '2015-12-10',
-    image:  '../img/cookie.jpeg',
-    text:   'Just a neat project for a store to sell Salmon Cookies. Not hosted',
-    link:   'https://github.com/schrode50/cookie-stand'
-  },
-  {
-    name:   'BeerNuts',
-    date:   '2015-12-27',
-    image:  '../img/beer.jpg',
-    text:   'Beer information page with associated triva game',
-    link:   'http://laceylin2010.github.io/BeerNuts/'
-  }
-];
-
 var Work = function(input){
   this.name = input.name;
   this.date = input.date;
@@ -30,7 +13,7 @@ Work.prototype.toHtml = function(obj){
   var template = Handlebars.compile($('#article-template').text());
 
   this.daysAgo = parseInt((new Date() - new Date(this.date))/60/60/24/1000);
-  this.publishStatus = this.date ? 'about ' + this.daysAgo + ' days old' : '(draft)';
+  this.publishStatus = this.date ? 'about ' + this.daysAgo + ' days old' : '(not hosted)';
 
   return template(this);
 };

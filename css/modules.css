@@ -20,4 +20,12 @@
   font-weight: bold;
   font-stretch: semi-expanded;
 }
+
+a :hover {
+  color:  blue;
+}
+
+.nav-container a:hover {
+  color: blue;
+}
 }

@@ -1,7 +1,7 @@
 @import URL('https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css');
-@import URL('skeleton.css');
+/*@import URL('skeleton.css');*/
 body {
-  background-color: #b04ffc;
+  background-color: #269595;
   }
 
 main {
@@ -15,11 +15,12 @@ h1 {
 }
 nav a{
   padding-left: 10%;
-  color: #ff952c;
+  color: #725D7F;
 }
 
 img {
   max-width: 100%;
+  position:
 }
 
 a {
@@ -27,8 +28,7 @@ a {
   text-decoration: none;
   list-style-type: none;
   /*flex-direction: row;*/
-
-  color: #ff952c;
+    color: #E7DF7B;
 }
 
 p {
