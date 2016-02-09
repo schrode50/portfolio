@@ -1,0 +1,49 @@
+@import URL('https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css');
+/*@import URL('skeleton.css');*/
+body {
+  background-color: #269595;
+  }
+
+main {
+    margin: 0 5% 0 5%;
+  }
+
+h1 {
+  text-align: center;
+  margin-top: 3%;
+  font-family: lobster;
+}
+nav a{
+  padding-left: 10%;
+  color: #725D7F;
+}
+
+img {
+  max-width: 100%;
+  position:
+}
+
+a {
+  /*justify-content: space-between;*/
+  text-decoration: none;
+  list-style-type: none;
+  /*flex-direction: row;*/
+    color: #E7DF7B;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+footer {
+  text-align: center;
+}
+
+li {
+  font: serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-stretch: semi-expanded;
+  text-align: center;
+  list-style: none;
+}
