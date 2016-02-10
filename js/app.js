@@ -33,7 +33,6 @@ function populate(){
   }
 };
 
-
 $('.home').on('click', function() {
   location.reload();
 });
@@ -44,7 +43,7 @@ Work.handleNav = function() {
     $('#' + $(this).data('content')).fadeIn();
   });
 };
-// Work.handleNav();
+Work.handleNav();
 
 function loadData(){
   var eTag;
@@ -60,9 +59,9 @@ function loadData(){
         localStorage.eTag = eTag;
         $.getJSON('data/projects.json', function(data){
           localStorage.setItem('projects', JSON.stringify(data));
-          $.each(data, function(){
-            allJobs.push(this);
-          });
+          // $.each(data, function(){
+          //   allJobs.push(this);
+          // });
         });
       } else {
         allJobs = JSON.parse(localStorage.projects);
@@ -70,3 +69,4 @@ function loadData(){
       populate();
     });
 };
+loadData();
