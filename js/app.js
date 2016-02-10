@@ -29,10 +29,12 @@
 
   function populate(){
     dateSort();
-    for (var i = allJobs.length - 1 ; i >= 0; i--){
-      var item = new Work(allJobs[i]);
+    allJobs.forEach(function(i) {
+    // for (var i = allJobs.length - 1 ; i >= 0; i--){
+      var item = new Work(i);
+      // var item = new Work(allJobs[i]);
       $('#portfolio').append(item.toHtml());
-    }
+    });
   };
 
   $('.home').on('click', function() {
