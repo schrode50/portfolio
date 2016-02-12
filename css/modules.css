@@ -1,9 +1,10 @@
-.title {
+/*.title {
   font-size: 2em;
-}
+}*/
 
-.date {
-  /*font-size: 2.4em;*/
+.tab-content p {
+  margin-top: 3%
+  font-size: 1.3em;
 }
 
 @media (min-width: 550px) {
@@ -15,7 +16,7 @@
 .nav-container li {
   font: serif;
   flex-grow: 1;
-  /*margin-left: 2%;*/
+  margin-left: 2%;
   font-size: 1.6em;
   font-weight: bold;
   font-stretch: semi-expanded;
@@ -23,10 +24,4 @@
 
 a :hover {
   color:  blue;
-}
-
-.nav-container a:hover {
-  color: blue;
-}
-
 }

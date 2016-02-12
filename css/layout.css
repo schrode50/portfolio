@@ -3,3 +3,21 @@
   justify-content: center;
   padding-bottom: 3%;
 }
+
+section p {
+  display: flex;
+  justify-content: center;
+  margin-left: 3%;
+  padding-top: 2%;
+  color: green;
+
+}
+
+.date {
+  align-items: center;
+}
+
+a.resume {
+  padding-top: 3%;
+  font-size: 1.4em;
+}

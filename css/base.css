@@ -1,38 +1,46 @@
-@import URL('https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css');
-/*@import URL('skeleton.css');*/
+@import URL('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+
 body {
-  background-color: #269595;
+  background-color: #D0D0D0;
+  margin: 0 2% 0 2%;
   }
 
-main {
-    margin: 0 5% 0 5%;
-  }
+header {
+  color: #4C7072;
+}
 
 h1 {
+  font-family: lobster;
+  font-size: 3em;
   text-align: center;
   margin-top: 3%;
-  font-family: lobster;
 }
+
 nav a{
   padding-left: 10%;
   color: #725D7F;
 }
 
-img {
-  max-width: 100%;
-  position:
+h2 {
+  font-size: 1.6em;
+  margin: 2% 30%;
+  background-position: center;
+  border-radius: 50px;
+  background-color: #BD7E7E;
+  display: flex;
+  justify-content: center;
 }
 
 a {
-  /*justify-content: space-between;*/
+  justify-content: space-between;
   text-decoration: none;
   list-style-type: none;
-  /*flex-direction: row;*/
-    color: #E7DF7B;
+  flex-direction: row;
+  /*color: #E7DF7B;*/
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 footer {
@@ -40,10 +48,15 @@ footer {
 }
 
 li {
+  padding-top: 2%;
   font: serif;
   font-size: 1.3em;
   font-weight: bold;
   font-stretch: semi-expanded;
   text-align: center;
   list-style: none;
+}
+
+time p {
+  justify-content: center;
 }
