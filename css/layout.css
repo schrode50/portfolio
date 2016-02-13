@@ -1,23 +1,23 @@
-.resume {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 3%;
+.main_header {
+  background-image: url('../img/b_ground.jpg');
+  max-width: 100%;
 }
 
-section p {
+.main_header h1 {
+  font-family: lobster;
+  font-size: 3em;
+  text-align: center;
+  color: #FFEDED;
+  padding: 4% 0 4% 0;
+}
+
+.byline > p {
   display: flex;
   justify-content: center;
-  margin-left: 3%;
+  font-family: allerta;
+}
+
+section > p {
+  margin: auto 3%;
   padding-top: 2%;
-  color: green;
-
-}
-
-.date {
-  align-items: center;
-}
-
-a.resume {
-  padding-top: 3%;
-  font-size: 1.4em;
 }

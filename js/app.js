@@ -11,10 +11,13 @@
   }
 
   var Work = function(input){
-    this.name = input.name;
-    this.date = input.date;
-    this.text = input.text;
-    this.link = input.link;
+    // this.name = input.name;
+    // this.date = input.date;
+    // this.text = input.text;
+    // this.link = input.link;
+    Object.keys(input).forEach(function(e, index, keys) {
+      this[e] = input[e];
+    }, this);
   };
 
   Work.prototype.toHtml = function(obj){
