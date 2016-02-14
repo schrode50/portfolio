@@ -30,24 +30,10 @@
   function populate(){
     dateSort();
     allJobs.forEach(function(i) {
-    // for (var i = allJobs.length - 1 ; i >= 0; i--){
       var item = new Work(i);
-      // var item = new Work(allJobs[i]);
       $('#portfolio').append(item.toHtml());
     });
   };
-
-  $('.home').on('click', function() {
-    location.reload();
-  });
-
-  Work.handleNav = function() {
-    $('.main-nav').on('click', '.tab', function(e) {
-      $('#portfolio').hide();
-      $('#' + $(this).data('content')).fadeIn();
-    });
-  };
-  Work.handleNav();
 
   function loadData(){
     var eTag;
