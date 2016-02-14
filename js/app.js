@@ -34,18 +34,6 @@
     });
   };
 
-  $('.home').on('click', function() {
-    location.reload();
-  });
-
-  Work.handleNav = function() {
-    $('.main-nav').on('click', '.tab', function(e) {
-      $('#portfolio').hide();
-      $('#' + $(this).data('content')).fadeIn();
-    });
-  };
-  Work.handleNav();
-
   function loadData(){
     var eTag;
     $.ajax(
