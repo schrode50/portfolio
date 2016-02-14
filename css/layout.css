@@ -17,6 +17,15 @@
   font-family: allerta;
 }
 
+.proj_name {
+  box-shadow: 10px 10px 5px #111111;
+}
+
+.proj_img {
+  display: block;
+  margin: auto;
+  padding-top: 2%;
+}
 section > p {
   margin: auto 3%;
   padding-top: 2%;
