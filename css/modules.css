@@ -2,6 +2,10 @@ a :hover {
   color: #98C198;
 }
 
+.tab :hover {
+  color: #98C198;
+}
+
 @media (min-width: 550px) {
 
 nav a {
