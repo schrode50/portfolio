@@ -8,14 +8,14 @@
   },
   {
     "name":   "Cookie-Stand",
-    "date":   "14-12-2015",
+    "date":   "NA",
     "image":  "../img/cookie.jpeg",
     "text":   "First app using a constructor and form data that was built during an 201 level javascript course. Pat loves making salmon cookies. Are they salmon flavored or salmon shaped? We may never know",
     "link":   "https://github.com/schrode50/cookie-stand"
   },
   {
     "name":   "BusMall",
-    "date":   "18-12-2015",
+    "date":   "NA",
     "image":  "../img/scissors.jpg",
     "text":   "Product survey app built to get user preferences over a series of photos with results displayed using Chart.js",
     "link":   "https://github.com/schrode50/busmall"
