@@ -1,23 +1,26 @@
 [
   {
-    "name":   "BeerNuts",
-    "date":   "27-12-2015",
-    "image":  "../img/beer.jpg",
-    "text":   "Beer information page with recommendations for local Seattle brew pubs and a beer style selector with an associated triva game.",
-    "link":   "http://laceylin2010.github.io/BeerNuts/"
+    "name":     "BeerNuts",
+    "pubDate":  "2015-12-27",
+    "date":     "2015-12-27",
+    "image":    "../img/beer.jpg",
+    "text":     "Beer information page with recommendations for local Seattle brew pubs and a beer style selector with an associated triva game.",
+    "link":     "http://laceylin2010.github.io/BeerNuts/"
   },
   {
-    "name":   "Cookie-Stand",
-    "date":   "NA",
-    "image":  "../img/cookie.jpeg",
-    "text":   "First app using a constructor and form data that was built during an 201 level javascript course. Pat loves making salmon cookies. Are they salmon flavored or salmon shaped? We may never know",
-    "link":   "https://github.com/schrode50/cookie-stand"
+    "name":     "Cookie-Stand",
+    "pubDate":  "N.A.",
+    "date":     "2015-12-14",
+    "image":    "../img/cookie.jpeg",
+    "text":     "First app using a constructor and form data that was built during an 201 level javascript course. Pat loves making salmon cookies. Are they salmon flavored or salmon shaped? We may never know",
+    "link":     "https://github.com/schrode50/cookie-stand"
   },
   {
-    "name":   "BusMall",
-    "date":   "NA",
-    "image":  "../img/scissors.jpg",
-    "text":   "Product survey app built to get user preferences over a series of photos with results displayed using Chart.js",
-    "link":   "https://github.com/schrode50/busmall"
+    "name":     "BusMall",
+    "pubDate":  "N.A.",
+    "date":     "2015-12-18",
+    "image":    "../img/scissors.jpg",
+    "text":     "Product survey app built to get user preferences over a series of photos with results displayed using Chart.js",
+    "link":     "https://github.com/schrode50/busmall"
   }
 ]
