@@ -1,3 +1,11 @@
+a :hover {
+  color: #98C198;
+}
+
+.tab :hover {
+  color: #98C198;
+}
+
 @media (min-width: 550px) {
 
 nav a {
@@ -12,4 +20,5 @@ nav a {
   font: serif;
   flex-grow: 1;
   justify-content: space-between;
+}
 }

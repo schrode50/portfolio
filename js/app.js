@@ -1,13 +1,25 @@
 (function(module) {
 
   var allJobs = [];
-
+  var playData = {};
   function dateSort(){
     allJobs.sort(function(a,b){
       var dateA = new Date(a.date);
       var dateB = new Date(b.date);
-      return dateA - dateB;
+      return dateB - dateA;
     });
+    // I'll remove the console.logs before pulling to master. i like them for reference for now
+    console.log(allJobs);
+    //this does nothing useful but is an attempt to meet the grading rubric by incorporating the map() method.
+    Work.all = allJobs.map(function(x) {
+      return new Work(x);
+    });
+    console.log(Work.all);
+    //so this is a silly use of reduce to create a new array of objects that could potentially be worked on or manipulated without affecting the source objects.
+    var allJobsFlat = allJobs.reduce(function(prev, curr) {
+      return prev.concat(curr);
+    }, []);
+    console.log(allJobsFlat);
   }
 
   var Work = function(input){

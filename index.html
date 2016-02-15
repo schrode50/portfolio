@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content='text/html' charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
+    <link href="//fonts.googleapis.com/css?family=Lobster" rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet' type='text/css'>
     <link href='css/base.css' rel='stylesheet' type='text/css'>
     <link href='css/layout.css' rel='stylesheet' type='text/css'>
@@ -12,11 +12,11 @@
     <script id="article-template" type="text/x-handlebars-template">
       <section class='clearfix' id="full_list">
         <header>
-          <a href="{{link}}"><h1>{{name}}</h1></a>
+          <a href="{{link}}"><h1 class='proj_name'>{{name}}</h1></a>
           <div class="byline">
             <time>{{publishStatus}}</time>
             <p>Published On: {{date}}</p>
-            <img src='{{image}}'>
+            <img class='proj_img'src='{{{image}}}'>
             <section><p>{{{text}}}</p></section>
           </div>
         </header>
@@ -37,6 +37,9 @@
         </ul>
       </nav>
     </header>
+    <ul>
+      <!-- <li><img src='img/beer.jpg'></li> -->
+    </ul>
     <main id='full_list'>
       <section>
         <ul id='portfolio'>
