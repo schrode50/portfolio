@@ -31,10 +31,10 @@
   Work.prototype.toHtml = function(obj){
 
     var template = Handlebars.compile($('#article-template').text());
-    return template(this);
 
     this.daysAgo = parseInt((new Date() - new Date(this.date))/60/60/24/1000);
-    this.publishStatus = this.date ? 'about ' + this.daysAgo + ' days old' : '(not hosted)';
+    this.publishStatus = this.date ? 'Last worked on ' + this.daysAgo + ' days ago' : '(not hosted)';
+    return template(this);
 
   };
 
