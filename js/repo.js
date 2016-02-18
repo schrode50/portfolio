@@ -11,12 +11,13 @@
       headers: { 'Authorization': 'token ' + gitToken},
       success: function(data, message, xhr) {
         eTag = xhr.getResponseHeader('eTag');
+        console.log(eTag);
         console.log(data);
         repos.all = data;
       }
     }).done(callback);
   };
-
+  
   repos.with = function(attr) {
     return repos.all.filter(function(repo) {
       return repo[attr];

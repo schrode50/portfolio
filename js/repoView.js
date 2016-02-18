@@ -15,7 +15,7 @@
 
   repoView.index = function() {
     ui();
-    $('#about ul').append(repos.with('forks_count').map(render));
+    $('#about ul').append(repos.with('full_name').map(render));
   };
   
   module.repoView = repoView;
