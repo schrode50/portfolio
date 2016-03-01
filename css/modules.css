@@ -6,6 +6,10 @@ a :hover {
   color: #98C198;
 }
 
+#about {
+  display: none;
+}
+
 @media (min-width: 550px) {
 
 nav a {
