@@ -1,8 +1,10 @@
 (function(module) {
 
-  var allJobs = [];
   var playData = {};
-  function dateSort(){
+  var allJobs = [];
+  console.log('am i here');
+  playData.dateSort = function() {
+    console.log('playdata.datesort');
     allJobs.sort(function(a,b){
       var dateA = new Date(a.date);
       var dateB = new Date(b.date);
@@ -20,16 +22,17 @@
       return prev.concat(curr);
     }, []);
     console.log(allJobsFlat);
-  }
+  };
 
-  var Work = function(input){
+  function Work(input) {
+    console.log('inside work');
     Object.keys(input).forEach(function(e, index, keys) {
       this[e] = input[e];
     }, this);
+
   };
-
-  Work.prototype.toHtml = function(obj){
-
+  Work.prototype.toHtml = function(obj) {
+    console.log('in work.toproto');
     var template = Handlebars.compile($('#article-template').text());
 
     this.daysAgo = parseInt((new Date() - new Date(this.date))/60/60/24/1000);
@@ -38,27 +41,30 @@
 
   };
 
-  function populate(){
-    dateSort();
+  playData.populate = function() {
+    console.log('inside populate');
+    playData.dateSort();
     allJobs.forEach(function(i) {
       var item = new Work(i);
       $('#portfolio').append(item.toHtml());
     });
   };
 
-  function loadData(){
+  playData.loadData = function() {
     var eTag;
+    console.log('in loaddata');
     $.ajax(
       {
         url: 'data/projects.json',
         type: 'HEAD',
-        success: function(data, message, xhr){
+        success: function(data, message, xhr) {
           eTag = xhr.getResponseHeader('ETag');
         }
       }).done(function(){
-        if (localStorage.eTag !== eTag){
+        console.log('inside .done');
+        if (localStorage.eTag !== eTag) {
           localStorage.eTag = eTag;
-          $.getJSON('data/projects.json', function(data){
+          $.getJSON('data/projects.json', function(data) {
             localStorage.setItem('projects', JSON.stringify(data));
             // $.each(data, function(){
             //   allJobs.push(this);
@@ -66,9 +72,13 @@
           });
         } else {
           allJobs = JSON.parse(localStorage.projects);
+          console.log('inside loadData.done else');
         }
-        populate();
+        playData.populate();
       });
   };
-  module.loadData = loadData();
+
+  playData.loadData();
+
+  module.playData = playData;
 })(window);

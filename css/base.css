@@ -62,5 +62,6 @@ footer {
   font-size: 1.2em;
   color: rgba(47.5, 51, 54.9, .6);
   text-align: center;
-  padding-bottom: 2%;
+  padding-bottom: 2% 0;
+  margin-top: 1.2em;
 }

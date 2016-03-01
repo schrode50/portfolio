@@ -2,7 +2,7 @@
   var homeController = {};
 
   homeController.index = function() {
-    $('about').hide();
+    $('#about').hide();
     $('#portfolio').show();
   };
   module.homeController = homeController;
