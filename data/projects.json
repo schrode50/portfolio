@@ -1,5 +1,13 @@
 [
   {
+    "name":     "YouChoose",
+    "pubDate":  "2016-02-26",
+    "date":     "2016-02-28",
+    "image":    "../img/youchoose_logo.png",
+    "text":     "This was a group project for a codefellows 301 course that involved the importing content from the Youtube API, the google oauth2 sign in method and local storage. This was a great experience in rapid prototyping while incorporating new technologies. The API calls were new to the team. We also incorporated client side routing and local storage into the project. db storage via firebase will be added shortly as we are continueing to work on this.",
+    "link":     "https://youchoose.herokuapp.com"
+  },
+  {
     "name":     "BeerNuts",
     "pubDate":  "2015-12-27",
     "date":     "2015-12-27",
