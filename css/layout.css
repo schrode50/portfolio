@@ -26,7 +26,12 @@
   margin: auto;
   padding-top: 2%;
 }
+
 section > p {
   margin: auto 3%;
   padding-top: 2%;
+}
+
+img {
+  max-width: 100%;
 }
