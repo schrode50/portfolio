@@ -1,6 +1,14 @@
 .main_header {
-  background-image: url('../img/b_ground.jpg');
-  max-width: 100%;
+  /*background-image: url('../img/b_ground.jpg');*/
+  /*max-width: 100%;*/
+}
+
+html {
+  background: url('../img/binary.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .main_header h1 {
@@ -21,12 +29,18 @@
   box-shadow: 10px 10px 5px #111111;
 }
 
-.proj_img {
+img {
   display: block;
   margin: auto;
   padding-top: 2%;
+  max-width: 100%;
 }
+
 section > p {
   margin: auto 3%;
   padding-top: 2%;
 }
+
+/*#full_list {
+  display: none;
+}*/
