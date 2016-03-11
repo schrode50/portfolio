@@ -1,9 +1,8 @@
 @import URL('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
 
-body {
+/*body {
   background-color: #D0D0D0;
-  /*margin: 0 2% 0 2%;*/
-  }
+}*/
 
 nav {
   padding-bottom: 2%;
@@ -16,7 +15,7 @@ nav a {
   font-size: 1.7em;
   font-weight: bold;
   text-decoration: none;
-  color: #FFEDED;
+  color: #FF9023;
   margin-bottom: 2%;
   }
 
@@ -39,14 +38,15 @@ a {
   font-size: 1.8em;
   font-weight: bolder;
   margin: 2% auto;
-  color: #926363;
+  color: #BBA800;
 }
 
 time {
   font-family: sans-serif;
   font-style: italic;
   font-weight: bold;
-  opacity: .5;
+  color: white;
+  opacity: .8;
   display: flex;
   justify-content: center;
   margin: 3% 0 2% 0;
@@ -55,6 +55,7 @@ time {
 p {
   font-family: helvetica;
   font-size: 1.3em;
+  color: white;
 }
 
 footer {
@@ -64,4 +65,5 @@ footer {
   text-align: center;
   padding-bottom: 2% 0;
   margin-top: 1.2em;
+  color: #FF9023;
 }
