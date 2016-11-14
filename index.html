@@ -13,7 +13,8 @@
     <script id="article-template" type="text/x-handlebars-template">
       <section class='clearfix' id="full_list">
         <header>
-          <a href="{{link}}"><h1 class='proj_name'>{{name}}</h1></a>
+          <a href="{{link}}" target="_blank"><h1 class='proj_name'>{{name}}</h1></a>
+          <a href="{{git}}" target="_blank"><h3 class='git'>Code</h3></a>
           <div class="byline">
             <time>{{publishStatus}}</time>
             <p>Published On: {{pubDate}}</p>
@@ -31,8 +32,8 @@
       <nav class='main-nav'>
         <div></div>
         <ul class='nav-container'>
-          <li class='tab home'><a href="/">Home</a></li>
           <li class='tab' data-content='about'><a href="/about">About</a></li>
+          <li class='tab'><a class='resume' href="https://www.dropbox.com/s/2qw0inbon2srq8v/Stephen_Schroeder_Resume.pdf?dl=0">Resume</a></li>
           <li class='tab'><a href="https://www.linkedin.com/in/schrode50" target="_blank">Linkedin</a></li>
           <li class='tab'><a href="https://github.com/schrode50?tab=repositories" target="_blank">Github</a></li>
         </ul>
@@ -49,15 +50,15 @@
             <div class='date'></div>
             <div class='pic'></div>
             <div class='desc'></div>
+            <div class='git'></div>
           </li>
         </ul>
       </section>
       <section class='tab-content' id='about'>
         <h2>A little about me</h2>
         <p>
-          I've worn a lot of hats over the years. Bartender, server, wintersports equipment sales rep, stone/tile contractor, video compression engineer, and now hopefully we can add web developer to the list. I get restless easily and can only take doing the same thing over and over for soo long. I have to either keep learning and growing or move on.
+          I've worn a lot of hats over the years. Video compression engineer, stone/tile contractor, wintersports equipment sales rep, bartender, server, and now we can add web developer to the list. I get restless doing the same thing repeatedly so web development is a great fit for me due to its continual evolution. I have the opportunity to keep learning and growing.
         </p>
-        <a class='resume' href="#">Resume coming soon</a>
       </section>
     </main>
     <footer>
