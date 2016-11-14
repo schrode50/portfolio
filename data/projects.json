@@ -1,19 +1,39 @@
 [
   {
+    "name":     "Dashjobs",
+    "pubDate":  "2016-07-12",
+    "date":     "2016-07-15",
+    "image":    "../img/dashjobs_rs.png",
+    "text":     "MEAN stack app used to help organize an individuals job search activities. You have several different options once importing a job. Several fields help you keep track of where you are in the process.",
+    "link":     "http://dashjobs.herokuapp.com/",
+    "git":      "https://github.com/DashJob/dash-job-FE"
+  },
+  {
+    "name":     "Plopjs",
+    "pubDate":  "2016-06-08",
+    "date":     "2016-06-10",
+    "image":    "../img/plopjs.png",
+    "text":     "1st group project for Code Fellows 401 JS course. This app produces cloud-based storage of organization level boilerplate intended to simplify companies project development by allowing for customizable templates to be generated, stored, and shared repeatedly.",
+    "link":     "https://www.npmjs.com/package/plopjs",
+    "git":      "https://github.com/PLOPdotJS"
+  },
+  {
     "name":     "YouChoose",
     "pubDate":  "2016-02-26",
     "date":     "2016-02-28",
     "image":    "../img/youchoose_logo.png",
-    "text":     "This was a group project for a codefellows 301 course that involved the importing content from the Youtube API, the google oauth2 sign in method and local storage. This was a great experience in rapid prototyping while incorporating new technologies. The API calls were new to the team. We also incorporated client side routing and local storage into the project. db storage via firebase will be added shortly as we are continuing to work on this.",
-    "link":     "https://youchoose.herokuapp.com"
+    "text":     "This was a group project for a Code Fellows 301 course that involved the importing content from the Youtube API, the google oauth2 sign in method and local storage. This was a great experience in rapid prototyping while incorporating new technologies. The API calls were new to the team. We also incorporated client side routing and local storage into the project.",
+    "link":     "https://youchoose.herokuapp.com",
+    "git":      "https://github.com/schrode50/youchoose"
   },
   {
     "name":     "BeerNuts",
     "pubDate":  "2015-12-27",
     "date":     "2015-12-27",
-    "image":    "../img/beer.jpg",
+    "image":    "../img/beer_rs.jpg",
     "text":     "Beer information page with recommendations for local Seattle brew pubs and a beer style selector with an associated triva game.",
-    "link":     "http://laceylin2010.github.io/BeerNuts/"
+    "link":     "http://laceylin2010.github.io/BeerNuts/",
+    "git":      "https://github.com/schrode50/BeerNuts"
   },
   {
     "name":     "Cookie-Stand",
@@ -21,7 +41,8 @@
     "date":     "2015-12-14",
     "image":    "../img/cookie.jpeg",
     "text":     "First app using a constructor and form data that was built during an 201 level javascript course. Pat loves making salmon cookies. Are they salmon flavored or salmon shaped? We may never know",
-    "link":     "https://github.com/schrode50/cookie-stand"
+    "link":     "https://github.com/schrode50/cookie-stand",
+    "git":      "https://github.com/schrode50/cookie-stand"
   },
   {
     "name":     "BusMall",
@@ -29,6 +50,7 @@
     "date":     "2015-12-18",
     "image":    "../img/scissors.jpg",
     "text":     "Product survey app built to get user preferences over a series of photos with results displayed using Chart.js",
-    "link":     "https://github.com/schrode50/busmall"
+    "link":     "https://github.com/schrode50/busmall",
+    "git":      "https://github.com/schrode50/busmall"
   }
 ]

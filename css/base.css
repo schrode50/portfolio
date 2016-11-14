@@ -1,8 +1,8 @@
 @import URL('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
 
-/*body {
+body {
   background-color: #D0D0D0;
-}*/
+}
 
 nav {
   padding-bottom: 2%;
@@ -28,6 +28,10 @@ h2 {
   background-color: #4F754F;
   display: flex;
   justify-content: center;
+}
+
+h3 {
+  font-size: .7em;
 }
 
 a {
