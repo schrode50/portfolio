@@ -1,25 +1,4 @@
-var requestProxy = require('express-request-proxy'),
-  express = require('express'),
-  port = process.env.PORT || 3000,//this is to allow for dynamically created ports and defaults to 3000 otherwise
-  app = express();
+'use strict';
 
-var proxyGitHub = function(request, response) {
-  console.log('Routing GitHub request for', request.params[0]);
-  (requestProxy({
-    url: 'https://api.github.com/' + request.params[0],
-    headers: { Authorization: 'token ' + process.env.GITHUB_TOKEN }
-  }))(request, response);
-};
-
-app.get('/github/*', proxyGitHub);
-
-app.use(express.static('./'));
-
-app.get('*', function(request, response) {
-  console.log('New request:', request.url);
-  response.sendFile('index.html', { root: '.' });
-});
-
-app.listen(port, function() {
-  console.log('Server started on port ' + port + '!');
-});
+require('express')().use(require('express')
+  .static(__dirname + '/builds')).listen(process.env.PORT || 8080, () => console.log('Server started on port !'));
