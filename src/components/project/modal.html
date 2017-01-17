@@ -1,0 +1,36 @@
+<div class="portfolio-modal fade in" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true" style="display: block; padding-left: 0px">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="container">
+        <!-- CLOSING THE MODAL BUTTON  -->
+        <!-- <div class="close-modal">
+          <button class="close-button" type="button" name="button" ng-click="closeModal()">Back</button>
+        </div> -->
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>{{projectInfo.name}}</h2>
+
+              <p class="item-intro text-muted">
+              </p>
+              <div class="modal-pic-holder">
+
+              <img class="img-responsive img-centered" src="{{projectInfo.imgTwo}}" alt="" />
+            </div>
+            <div class="tech-used">
+
+              <p class="text-muted">
+                {{projectInfo.tech}}
+              </p>
+            </div>
+              <a href="{{projectInfo.url}}">{{projectInfo.url}}</a>
+              <p class="text-muted">
+                {{projectInfo.description}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
