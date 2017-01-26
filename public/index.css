@@ -1,6 +1,9 @@
-
 nav div ul li a.active {
   background-color: #e0e0e0 !important;
+}
+
+.hero-text{
+  color: #eee;
 }
 
 .parallax-container {
@@ -10,6 +13,10 @@ nav div ul li a.active {
 .social-button {
   display: inline-block;
   margin: 5px 0;
+}
+
+.sumo {
+  max-width: 100%;
 }
 
 @media (min-width: 0) {
