@@ -1,4 +1,8 @@
 'use strict';
 
-require('express')().use(require('express')
-  .static(__dirname + '/builds')).listen(process.env.PORT || 8080, () => console.log('Server started on port !'));
+const koa = require('koa');
+const app = koa();
+
+app.use(require('koa-static')(__dirname + '/public'));
+
+app.listen(8000);
