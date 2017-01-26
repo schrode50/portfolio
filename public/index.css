@@ -1,0 +1,19 @@
+
+nav div ul li a.active {
+  background-color: #e0e0e0 !important;
+}
+
+.parallax-container {
+  height: 400px !important;
+}
+
+.social-button {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+@media (min-width: 0) {
+  .social-button {
+    width: 100%;
+  }
+}
