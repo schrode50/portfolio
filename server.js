@@ -5,4 +5,4 @@ const app = koa();
 
 app.use(require('koa-static')(__dirname + '/public'));
 
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
