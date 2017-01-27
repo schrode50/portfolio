@@ -19,6 +19,10 @@ nav div ul li a.active {
   max-width: 100%;
 }
 
+.find {
+  padding-left: 12px;
+}
+
 @media (min-width: 0) {
   .social-button {
     width: 100%;
