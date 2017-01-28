@@ -2,7 +2,7 @@ nav div ul li a.active {
   background-color: #e0e0e0 !important;
 }
 
-.hero-text{
+.hero-text {
   color: #eee;
 }
 
@@ -16,7 +16,7 @@ nav div ul li a.active {
 }
 
 .sumo {
-  max-width: 100%;
+  width: 100%;
 }
 
 .find {
